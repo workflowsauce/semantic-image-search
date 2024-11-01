@@ -1,0 +1,12 @@
+# semantic-image-search
+
+Simple tool to generate and embed descriptions of images that can be searched by text.
+
+**To run:**
+
+1. `npm i`
+2. Copy `.env.example` as `.env` and paste in your API keys
+3. Optional: Run `npm run process-images /path/to/image/dir` to add a bunch of images
+4. Run with `npm run dev` and open up http://localhost:3000 to play with it.
+
+Try dragging an image onto the page!

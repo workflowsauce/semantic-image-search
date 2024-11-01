@@ -1,0 +1,6 @@
+.DS_STORE
+.history/
+data/
+node_modules/
+uploads/
+.env

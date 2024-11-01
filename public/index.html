@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Search</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Semantic Image Search</h1>
+        <div class="search-container">
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Describe what you're looking for..."
+            autocomplete="off"
+          />
+          <button id="searchButton">Search</button>
+        </div>
+        <input 
+      type="file"
+      id="imageInput"
+      accept="image/*"
+      class="hidden"
+    />
+      </header>
+
+      <main>
+        <div id="results" class="results-grid"></div>
+        <div id="loading" class="loading hidden">Searching...</div>
+        <div id="noResults" class="no-results hidden">No images found</div>
+      </main>
+    </div>
+
+    <template id="imageCardTemplate">
+      <div class="image-card">
+        <img class="preview" src="" alt="" />
+        <div class="details">
+          <h3 class="filename"></h3>
+          <p class="description"></p>
+          <p class="extracted-text"></p>
+          <div class="similarity"></div>
+          <button class="delete-button">Delete</button>
+        </div>
+      </div>
+    </template>
+    <script src="app.js"></script>
+  </body>
+</html>
